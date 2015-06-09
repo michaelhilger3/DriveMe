@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityLab1"
+    android:background="#ea3c3c3c">
+
+    <TextView android:text="@string/drive_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:background="@drawable/steeringwheel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+// this is the phone button
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/Phone"
+        android:layout_alignTop="@+id/Maps"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/phone"/>
+// this is the music button
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/Music"
+        android:layout_alignBaseline="@+id/Maps"
+        android:layout_alignBottom="@+id/Maps"
+        android:layout_toStartOf="@+id/textView2"
+        android:background="@drawable/musicnote"/>
+// This is the maps button
+    <Button
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/Maps"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:background="@drawable/earth"/>
+//this is the exit button
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/Music"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/exit"
+        android:id="@+id/Exit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text= "@string/choose_category"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed:"
+        android:id="@+id/speed1"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Exit" />
+
+</RelativeLayout>
